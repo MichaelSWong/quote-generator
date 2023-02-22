@@ -15,7 +15,7 @@ const App = () => {
         setQuotes(json);
         setQuote(json[0]);
       });
-  });
+  }, []);
 
   const getNewQuote = () => {
     setQuote(getRandomQuotes(quotes));
